@@ -10,10 +10,15 @@ import android.widget.TextView
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display_message)
     }
-    val message = intent.getStringExtra(EXTRA_MESSAGE)
+     // Get the Intent that started this activity and extract the string
+     val message = intent.getStringExtra(EXTRA_MESSAGE)
 
-    // Capture the layout's TextView and set the string as its text
-    val textView = findViewById<TextView>(R.id.textView).apply {
-        text = message
-    }
-}
+     // Capture the layout's TextView and set the string as its text
+     val textView = findViewById<TextView>(R.id.textView).apply {
+         text = message
+     }
+
+     fun outra(view: android.view.View) {}
+     fun Avançar(view: android.view.View) {}
+ }
+

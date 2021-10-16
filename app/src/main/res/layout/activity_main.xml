@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/newcol">
+    android:background="@drawable/newcol"
+    tools:context="com.example.nextactivity.DisplayMessageActivity"
+
+
+    >
 
 
     <Button
         android:id="@+id/buttom2"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="164dp"
         android:text="Calcular"
@@ -22,7 +25,7 @@
     <EditText
         android:id="@+id/nota1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginTop="168dp"
         android:ems="10"
         android:gravity="center"
@@ -81,16 +84,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
-        android:background="@color/purple_500"
         android:gravity="center"
-        android:hint="Resultado"
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttom2"
+        app:layout_constraintTop_toBottomOf="@+id/buttom2" />
 
-        />
-
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:onClick="Avançar"
+        android:text="@string/bot_o"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="OnClick" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NextActivity</string>
+    <string name="bot_o">Botão</string>
 </resources>

@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DisplayMessageActivity">
+    android:background="@drawable/colornew"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DisplayMessageActivity"
+
+    >
 
     <TextView
         android:id="@+id/textView"
@@ -12,10 +16,10 @@
         android:layout_height="47dp"
         android:layout_marginTop="164dp"
         android:textSize="20sp"
-        android:background="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         android:gravity="center"
         app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

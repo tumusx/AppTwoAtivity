@@ -15,6 +15,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+    }
+    fun sendMessage(view: View) {
 
         val n1 = findViewById<EditText>(R.id.nota1)
         val n2 = findViewById<EditText>(R.id.nota2)
@@ -23,6 +25,13 @@ class MainActivity : AppCompatActivity() {
         val callButton = findViewById<Button>(R.id.buttom2)
         val nextView = findViewById<Button>(R.id.nextButton)
 
+        val intent = Intent(this, DisplayMessageActivity::class.java)
+        startActivity(intent)
+      /*  val editText = findViewById<EditText>(R.id.editTextTextPersonName)
+        val message = editText.text.toString()
+        val intent = Intent(this, DisplayMessageActivity::class.java).apply {
+            putExtra(EXTRA_MESSAGE, message)
+        }*/
         callButton.setOnClickListener {
             val valnota1 = n1.text.toString().toFloat()
             val valnota2 = n2.text.toString().toFloat()
@@ -44,8 +53,12 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+        startActivity(intent)
+
 
     }
+
+
 
 
 }
