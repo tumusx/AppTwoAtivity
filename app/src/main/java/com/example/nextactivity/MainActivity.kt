@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
         val n3 = findViewById<EditText>(R.id.nota3)
         val total = findViewById<TextView>(R.id.result)
         val callButton = findViewById<Button>(R.id.buttom2)
-        val nextView = findViewById<Button>(R.id.nextButton)
 
         val intent = Intent(this, DisplayMessageActivity::class.java)
         startActivity(intent)
