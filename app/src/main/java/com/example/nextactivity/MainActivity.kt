@@ -23,14 +23,12 @@ class MainActivity : AppCompatActivity() {
         val n3 = findViewById<EditText>(R.id.nota3)
         val total = findViewById<TextView>(R.id.result)
         val callButton = findViewById<Button>(R.id.buttom2)
-
-        val intent = Intent(this, DisplayMessageActivity::class.java)
-        startActivity(intent)
-      /*  val editText = findViewById<EditText>(R.id.editTextTextPersonName)
-        val message = editText.text.toString()
         val intent = Intent(this, DisplayMessageActivity::class.java).apply {
-            putExtra(EXTRA_MESSAGE, message)
-        }*/
+            putExtra(EXTRA_MESSAGE, callButton)
+
+        }
+
+
         callButton.setOnClickListener {
             val valnota1 = n1.text.toString().toFloat()
             val valnota2 = n2.text.toString().toFloat()
@@ -57,7 +55,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
+    private fun putExtra(extraMessage: String, callButton: Button?) {
 
+    }
 
 
 }

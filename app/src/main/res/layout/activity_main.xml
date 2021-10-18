@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/newcol"
     android:orientation="vertical"
-    android:padding="16dp"
+    android:padding="20sp"
     tools:context=".MainActivity">
 
 
@@ -26,7 +26,7 @@
 
     <Button
         android:id="@+id/buttom2"
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="33dp"
         android:text="Calcular"
@@ -55,26 +55,32 @@
         android:id="@+id/nota2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="49dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Insira sua nota 2"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/nota3"
-        app:layout_constraintStart_toStartOf="@+id/nota1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nota1" />
 
     <EditText
         android:id="@+id/nota3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="49dp"
         android:ems="10"
         android:gravity="center"
         android:hint="Insira sua nota 3"
         android:inputType="numberDecimal"
         app:layout_constraintBottom_toTopOf="@+id/buttom2"
-        app:layout_constraintStart_toStartOf="@+id/nota2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nota2" />
 
     <TextView
