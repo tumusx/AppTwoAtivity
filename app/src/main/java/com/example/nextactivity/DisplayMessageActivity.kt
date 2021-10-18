@@ -22,7 +22,7 @@ class DisplayMessageActivity : AppCompatActivity() {
  }
 
 private fun Intent.getIntExtra(extraMessage: String) {
-
+a
 }
 
 
